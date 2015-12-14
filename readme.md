@@ -13,7 +13,7 @@ For this assignment you will be taking your knowledge of SQL and Knex and writin
 6. `SELECT * FROM todos WHERE id IN ('1', '2', '3') OR user_id IN ('4', '5', '6');`
 7. `SELECT * FROM students LIMIT 10 OFFSET 30;`
 8. `INSERT INTO students (name,fav_color) VALUES ('tyler','purple');`
-9. `INSERT INTO students (name) VALUES ('liz','blue') RETURNING *;`
+9. `INSERT INTO students (name,fav_color) VALUES ('liz','blue') RETURNING *;`
 10. `UPDATE students SET name ='cho' WHERE id=5;`
 11. `DELETE * FROM students;`
 12. `UPDATE "students" set "score" = "score" + 10 WHERE id=1;`
