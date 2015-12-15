@@ -16,9 +16,9 @@ For this assignment you will be taking your knowledge of SQL and Knex and writin
 9. `INSERT INTO students (name,fav_color) VALUES ('liz','blue') RETURNING *;`
 10. `UPDATE students SET name ='cho' WHERE id=5;`
 11. `DELETE * FROM students;`
-12. `UPDATE "students" set "score" = "score" + 10 WHERE id=1;`
+12. `UPDATE "students" SET "score" = "score" + 10 WHERE id=1;`
 13. `SELECT * FROM "students" LEFT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id".`
-14. `SELECT * from students RIGHT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id";`
+14. `SELECT * FROM "students" RIGHT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id";`
 
 #### Answer the following questions:
 
