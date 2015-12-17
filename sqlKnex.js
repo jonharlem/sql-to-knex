@@ -1,13 +1,13 @@
 // Turn the following SQL queries into Knex queries (you can write them next to each SQL query or below):
 
 // SELECT * FROM students;
-
+knex('students');
 // SELECT * FROM students WHERE id=1;
-
+knex('students').where({id:1});
 // SELECT * FROM students WHERE id=5; LIMIT 1
-
+knex('students').where({id:5}).limit(1);
 // SELECT COUNT(*) students;
-
+select count(*) from "students";
 // SELECT MIN('year') FROM students;
 // SELECT * FROM students WHERE name IS NOT NULL;
 // SELECT * FROM todos WHERE id IN ('1', '2', '3') OR user_id IN ('4', '5', '6');
