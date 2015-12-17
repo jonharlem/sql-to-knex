@@ -21,7 +21,9 @@ knex('students').insert({name: 'tyler',fav_color: 'purple'});
 //10. INSERT INTO students (name,fav_color) VALUES ('liz','blue') RETURNING *;
 knex('students').returning('*').insert({name: 'liz',fav_color: 'blue'});
 //11. UPDATE students SET name ='cho' WHERE id=5;
+knex('students').where('id','=',5).update({name:'cho'});
 //12. DELETE * FROM students;
+knex('students').del();
 //13. UPDATE "students" SET "score" = "score" + 10 WHERE id=1;
 //14. SELECT * FROM "students" LEFT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id".
 //15. SELECT * FROM "students" RIGHT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id";
