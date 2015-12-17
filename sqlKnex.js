@@ -7,9 +7,9 @@ knex('students').where({id:1});
 //3. SELECT * FROM students WHERE id=5; LIMIT 1
 knex('students').where({id:5}).limit(1);
 //4. SELECT COUNT(*) students;
-select count(*) from "students";
+knex('students').count('*');
 //5. SELECT MIN('year') FROM students;
-select min("year") from "students";
+knex('students').min('year');
 //6. SELECT * FROM students WHERE name IS NOT NULL;
 knex('students').whereNotNull('name');
 //7. SELECT * FROM todos WHERE id IN ('1', '2', '3') OR user_id IN ('4', '5', '6');
