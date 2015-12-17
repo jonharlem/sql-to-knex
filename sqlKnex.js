@@ -25,8 +25,12 @@ knex('students').where('id','=',5).update({name:'cho'});
 //12. DELETE * FROM students;
 knex('students').del();
 //13. UPDATE "students" SET "score" = "score" + 10 WHERE id=1;
+knex('students').where('id',1).increment('score', 10);
 //14. SELECT * FROM "students" LEFT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id".
+knex.select('*').from('students').leftOuterJoin('todos', 'students.id', 'todos.student_id');
 //15. SELECT * FROM "students" RIGHT OUTER JOIN "todos" ON "students"."id" = "todos"."student_id";
+knex.select('*').from('students').rightOuterJoin('todos', 'students.id', 'todos.student_id')
+
 
 // Answer the following questions:
 
